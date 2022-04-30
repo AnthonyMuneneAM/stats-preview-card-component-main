@@ -9,6 +9,52 @@
     --slightly-transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
     --slightly-transparent-white-heading: hsla(0, 0%, 100%, 0.6);
 }
+body{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+}
+.container{
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	width: 1100px;
+	background-color: var(--dark-desaturated-blue);
+}
+.container .info{
+	text-align: left;
+	padding-left: 2rem;
+}
+.container .info .info-heading{
+	color: var(--white);
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.container .info .info-heading span{
+	color: var(--soft-violet);
+}
+.container .info .info-text{
+	color: var(--slightly-transparent-white-paragraph);
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 400;
+}
+.container .info .stats{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.container .info .stats .stats-desc h2{
+	color: var(--white);
+	font-family: 'Inter', sans-serif;
+}
+.container .info .stats .stats-desc p{
+	color: var(--slightly-transparent-white-paragraph);
+}
 
 .attribution{
     font-size: 11px;
